@@ -31,41 +31,35 @@ Het staat je vrij een ander simpel te meten biometrisch kenmerk te onderzoeken. 
 GEEF HIER JE ONDERZOEKSVRAAG
 :::
 
+Is er een locatie gebonden verschil in lengte/breedte ratio van grassprieten?
+
 ::: attention
 GEEF HIER JE HYPOTHESE
 :::
+
+Er is een locatie gebonden verschil in lengte/breedte ratio van grassprieten
 
 ::: attention
 GEEF HIER JE NULHYPOTHESE
 :::
 
+Er is geen locatie gebonden verschil in lengte/breedte ratio van grassprieten
+
 ### Ontwerp van het experiment
 
-> GEEF EEN KORT OVERZICHT VAN JE EXPERIMENT
+Van 40 grassprieten, gelijk verdeeld over 2 locaties en willekeurig geselecteerd in en rond de geselecteerde locatie, zal de sprietlengte en -breedte gemeten worden.
 
 ### Ontwerp het protocol
 
-VUL HIER ONDER HET PROTOCOL AAN OF PAS DEZE AAN NAAR JOUW OPZET.
+### Protocol voor meting sprietlengte en sprietbreedte
 
-::: protocol
-#### Protocol voor meting handlengte en handbreedte
+#### Benodigdheden
 
-##### Benodigdheden
+Maatlat, schuifmaat of meetlint. Spreadsheet om resultaten vast te leggen, met toegang hiertoe op locaties zonder internet-toegang. Je laborant-ID: een unieke identifier die jou als onderzoeker identificeert. Neem hiervoor de laatste 4 cijfers van je studentnummer.
 
-1.  Maatlat, schuifmaat of meetlint.\
-2.  Spreadsheet om resultaten vast te leggen, met toegang hiertoe op locaties zonder internet-toegang.\
-3.  Je laborant-ID: een unieke *identifier* die jou als onderzoeker identificeert. Neem hiervoor de laatste 4 cijfers van je studentnummer.
+#### Data verzamelen
 
-##### Data verzamelen
-
-Zoek, samen met een ander groepje van je klas, in of rond het schoolgebouw medestudenten. Vraag beleefd of ze willen participeren in een klein wetenschappelijk onderzoekje voor school waarbij de maten van de hand opgenomen zullen worden.\
-Is het antwoord nee, dan groet je vriendelijk en zoek je verder.\
-Is het antwoord ja, dan vraag je of de proefpersoon de hand horizontaal en gestrekt wil houden met de palm naar beneden. Vervolgens meet je zowel de lengte als de breedte van de hand op, in millimeters. Deze leg je vast in de spreadsheet, samen met je laborant-ID en een identifier (géén naam!) van de proefpersoon. Ten slotte vraag je aan de proefpersoon zijn/haar/hun sexe en legt deze vast. Wil de proefpersoon deze niet geven, of is die nonbinair, dan leg je dit vast als "anders/onbekend". Het "parallel groepje" (dat niet jouw bevindingen mag horen) doet dezelfde meting en slaat deze met dezelfde participant identifier op.\
-Bedank de proefpersoon voor deelname.\
-Wissel de metingen af tussen de verschillende studenten in jouw groepje.
-
-Ga door totdat van voldoende proefpersonen de gegevens zijn verzameld.
-:::
+Zoek, in of rond het de geselecteerde en genoteerde locatie gras. Meet vanaf de grond tot het topje van de grasspriet en de breedte op het breedste punt in millimeters. Leg dit vast in de spreadsheet, samen met je laborant-ID en gras-ID(een uniek nummer) en de naam van de stad of dorp waarin het gras is gemeten. herhaal dit tot er een totaal van 40 grassprietjes zijn gemeten.
 
 ## Uitvoering
 
@@ -74,8 +68,8 @@ Je moet de onderzoeksresultaten in deze vorm opslaan:
 
 ```{=html}
 <pre>
-laborant_ID,subject_ID,handlengte,handbreedte,sexe
-3241,G1_03,113,104,m
+laborant_ID,gras_ID,graslengte,grasbreedte,locatie
+3241,G1_03,113,104,Peins
 <meer rijen met data>
 </pre>
 ```
