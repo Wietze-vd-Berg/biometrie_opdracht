@@ -82,9 +82,9 @@ laborant_ID,gras_ID,graslengte,grasbreedte,locatie
 Om data vanuit een tekstbestand in te lezen kan je dit codeblok gebruiken, aannemend dat je data er exact zo uitzien als in bovenstaande voorbeeld:
 
 ```{r demo-data-inlees, eval=FALSE}
-data_file <- "pad/naar/jouw/databestand.csv"
+data_file <- "Data/Gras_meetingen.csv"
 
-#data format: laborant_ID,subject_ID,handlengte,handbreedte,sexe
+#data format: laborant_ID,gras_ID,graslengte,grasbreedte,locatie
 biometric_data <- read.table(file = data_file,
                         header = TRUE,
                         sep = ",")
@@ -123,6 +123,14 @@ Beantwoord deze vragen:
 ### Bronnen van variatie
 
 ONDERZOEK BRONNEN VAN VARIATIE BESPREEK DIT KORT
+```{r}
+graslengte <- biometric_data$graslengte
+grasbreedte <- biometric_data$grasbreedte
+
+hist(graslengte, breaks = 5)
+hist(grasbreedte, breaks = 5)
+```
+
 
 ### De hypothese aannemen?
 
