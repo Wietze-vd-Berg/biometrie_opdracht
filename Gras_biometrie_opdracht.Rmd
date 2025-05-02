@@ -96,6 +96,36 @@ Let op: als je missende data hebt moet je die specificeren door dit argument toe
 ### Beschrijvende statistiek
 
 LAAT ENKELE BESCHRIJVENDE STATISTISCHE WAARDES ZIEN. GEEF EEN OF MEERDERE BOXPLOTS EN HISTOGRAMMEN BESPREEK DEZE DATA EN FIGUREN KORT. KAN JE IETS ZEGGEN OVER DE DATAVERDELING?
+```{r}
+# The first 20 entries in the csv file
+madelief_graslengte <- biometric_data$graslengte[1:20]
+madelief_grasbreedte <- biometric_data$grasbreedte[1:20]
+
+# Can you add your data here([21:40])
+
+hist(madelief_graslengte, breaks = 5, main="Histogram van graslengte in Peins")
+hist(madelief_grasbreedte, breaks = 5, main="Histogram van grasbreedte in Peins")
+
+# Boxplot of graslengte separated by location
+ggplot(biometric_data, aes(x = locatie, y = graslengte)) +
+  geom_boxplot(fill = "lightblue") +
+  theme_minimal() +
+  labs(title = "Graslengte per locatie", x = "Locatie", y = "Graslengte (mm)")
+
+# Boxplot of grasbreedte separated by location
+ggplot(biometric_data, aes(x = locatie, y = grasbreedte)) +
+  geom_boxplot(fill = "lightblue") +
+  theme_minimal() +
+  labs(title = "Graslengte per locatie", x = "Locatie", y = "Grasbreedte (mm)")
+
+# Print summary values
+print("Graslengte statistische waarden")
+summary(biometric_data$graslengte)
+
+
+print("Grasbreedte statistische waarden")
+summary(biometric_data$grasbreedte)
+```
 
 ### Welke verdeling?
 
@@ -129,13 +159,8 @@ Beantwoord deze vragen:
 
 ONDERZOEK BRONNEN VAN VARIATIE BESPREEK DIT KORT
 
-```{r}
-graslengte <- biometric_data$graslengte
-grasbreedte <- biometric_data$grasbreedte
+Mogelijke variaties in meetingen komen waarschijnlijk door het feit dat het gras in Peins vers gemaaid was
 
-hist(graslengte, breaks = 5)
-hist(grasbreedte, breaks = 5)
-```
 
 ### De hypothese aannemen?
 
@@ -148,7 +173,7 @@ Bespreek in je groep de volgende vragen en voeg de antwoorden toe aan je uitgewe
 
 1.  Zijn de metingen tussen de verschillende meters ook (significant) verschillend? Zo ja, waardoor zou je de verschillen kunnen verklaren?
 
-2.  Onderzoek de verschillen tussen mannen en vrouwen met betrekking tot hand lengte, handbreedte en de ratio.
+2.  Onderzoek de verschillen tussen locaties met betrekking tot graslengte, grasbreedte en de ratio.
 
 3.  Zou je het protocol aanpassen na deze ervaring, of was hij voldoende duidelijk en reproduceerbaar?
 :::
